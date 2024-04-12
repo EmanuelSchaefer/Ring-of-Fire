@@ -1,0 +1,28 @@
+.player {
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    span {
+        font-size: 24px;
+        margin-left: 25px;
+        color: white;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    background-color: rgba(50, 50, 50, 0.774);
+    img {
+        width: 55px;
+        height: 55px;
+        object-fit: cover;
+        border-radius: 100%;
+        filter: contrast(110%) saturate(150%);
+    }
+}
+
+.player-active {
+    background-color: #3f51b5 !important;
+}

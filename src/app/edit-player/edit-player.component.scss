@@ -1,0 +1,24 @@
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    cursor: pointer;
+    object-fit: cover;
+
+    &:hover {
+        filter: brightness(1.15);
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15px;
+}
+
+@media (max-width: 720px) {
+    .center {
+        display: none;
+    }
+}

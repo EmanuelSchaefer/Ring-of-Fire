@@ -1,0 +1,102 @@
+.bgImgHolz {
+    background-image: url('/assets/img/bgHolz.png');
+    position: absolute;
+    background-size: cover;
+}
+
+.start-screen {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    @media (max-width: 960px) {
+        overflow: hidden;
+    }
+
+    >img {
+        border-radius: 5%;
+
+        @media (max-width: 900px) {
+            height: 55vh;
+            width: 318px;
+            object-fit: cover;
+        }
+    }
+
+    >h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 6vh;
+        font-weight: 700;
+
+        @media (max-width: 900px) {
+            font-size: 5vh;
+            font-weight: 500;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 3.3vh;
+        }
+    }
+}
+
+@keyframes feuerAnimation {
+    0% {
+        text-shadow:
+            0 0 6px #ff5722,
+            0 0 12px #ff9800,
+            0 0 18px #ffeb3b,
+            0 0 24px #ff5722,
+            0 0 30px #f44336;
+    }
+
+    25% {
+        text-shadow:
+            0 0 8px #ff5722,
+            0 0 16px #ff9800,
+            0 0 24px #ffeb3b,
+            0 0 32px #ff5722,
+            0 0 40px #f44336;
+    }
+
+    50% {
+        text-shadow:
+            0 0 10px #ff5722,
+            0 0 20px #ff9800,
+            0 0 30px #ffeb3b,
+            0 0 40px #ff5722,
+            0 0 50px #f44336;
+    }
+
+    75% {
+        text-shadow:
+            0 0 8px #ff5722,
+            0 0 16px #ff9800,
+            0 0 24px #ffeb3b,
+            0 0 32px #ff5722,
+            0 0 40px #f44336;
+    }
+
+    100% {
+        text-shadow:
+            0 0 6px #ff5722,
+            0 0 12px #ff9800,
+            0 0 18px #ffeb3b,
+            0 0 24px #ff5722,
+            0 0 30px #f44336;
+    }
+}
+
+.start-screen>h1:hover {
+    animation: feuerAnimation 1.5s infinite;
+    color: #f44336;
+    cursor: pointer;
+}
